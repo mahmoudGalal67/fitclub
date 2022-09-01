@@ -1,0 +1,53 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img{
+  width: 10rem;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  color: white;
+  font-size: 18px;
+}
+
+li{
+  margin-left: 25px;
+}
+
+
+ul li a:hover{
+
+  color: var(--orange);
+  cursor: pointer;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+@media screen and (max-width:768px){
+  .header > :nth-child(2){
+    position: fixed;
+    padding: 2rem 1rem ;
+    background-color: var(--appColor);
+    flex-direction: column;
+    right: 2rem;
+    z-index: 999;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    top: 1rem;
+  }
+
+  .header > :nth-child(2) li{
+    text-align: center;
+    margin: 0;
+  }
+}

@@ -1,0 +1,265 @@
+.hero{
+  display: flex;
+  z-index: 2;
+}
+
+.hero .h-left{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 25px 15px;
+  z-index: 2;
+}
+
+.hero .h-right{
+  flex: 1;
+  position: relative;
+  background-color: var(--orange);
+  z-index: 2;
+}
+
+.thebestadd{
+  margin-top: 30px;
+  background-color:#363d42 ;
+  border-radius: 60px;
+  color: white;
+  padding: 15px 15px;
+  width: fit-content;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.thebestadd span{
+  z-index: 2;
+}
+
+.thebestadd div{
+  position: absolute;
+  border-radius: 50px;
+  left: 6px;
+  width: 80px;
+  height: 80%;
+  background-color: var(--orange);
+}
+
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 65px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero-text div:nth-child(3) p{
+  font-size: 18px;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.refers{
+  display: flex;
+  gap: 14px;
+}
+
+
+.refers div{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.refers div span:nth-child(1){
+  font-size: 25px;
+  color:white;
+}
+
+.refers div span:nth-child(2){
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.hero-buttons{
+  display: flex;
+  gap: 15px;
+}
+
+.hero-buttons button:nth-child(1){
+  background-color: var(--orange);
+}
+
+.hero-buttons button:nth-child(2){
+  background-color: transparent;
+  border: 2px solid var(--orange);
+}
+
+.heart-rate {
+background-color: var(--darkGrey);
+border-radius: 7px;
+padding: 25px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: flex-start;
+position: absolute;
+top: 120px;
+right: 50px;
+}
+
+.heart-rate>:nth-child(1){
+  width: 30px;
+}
+
+.heart-rate>:nth-child(2){
+  color: lightgray;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.h-right button{
+  color: black;
+  background-color: white;
+  position: absolute;
+  top: 45px;
+  right: 25px;
+}
+
+.hero-image{
+  position: absolute;
+  top: 10rem;
+  right: 8rem;
+  width: 23rem;
+  z-index: 2;
+}
+
+.hero-image-back{
+  position: absolute;
+  top: 4rem;
+  right: 20rem;
+  width: 15rem;
+}
+
+.calories{
+  display: flex;
+  gap: 2rem;
+  background-color:var(--caloryCard);
+  border-radius: 5px;
+  padding: 1rem;
+  position: absolute;
+  top: 32rem;
+  right: 28rem;
+  width: fit-content;
+}
+
+.calories img{
+  width: 3rem;
+}
+
+.calories div {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.calories div > span:nth-child(1){
+  color: var(--gray);
+}
+
+.calories div > span:nth-child(2){
+  color: white;
+}
+
+.h-blur{
+left: 0;
+width: 22rem;
+height: 30rem;
+}
+
+
+@media screen and (max-width:738px) {
+  .hero{
+    flex-direction: column;
+  }
+  .h-blur{
+    width: 14rem;
+  }
+  .thebestadd{
+    margin-top: 0;
+    font-size: small;
+    align-self: center;
+    transform: scale(.8);
+  }
+  .hero-text{
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+  }
+  .hero-text div:nth-child(3) p{
+    font-size: small;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .calories div > span:nth-child(1){
+    font-size: large;
+  }
+  .calories div > span:nth-child(2){
+    font-size: small;
+  }
+
+  .refers{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .refers div{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-buttons{
+    justify-content: center;
+  }
+
+  .refers div span:nth-child(2){
+    text-align: center;
+  }
+  .calories{
+    display: none;
+  }
+
+  .heart-rate{
+    display: none;
+  }
+
+  .h-right{
+    background: transparent;
+  }
+
+  .hero-image{
+    width: 15rem;
+    top: 4rem;
+    left: 7rem; 
+    position: relative;
+    display: none;
+  }
+
+  .hero-image-back{
+    display: none;
+  }
+
+  .h-right button{
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .hero-image{
+    display: none;
+  }
+}
